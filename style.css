@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --ff-oswald: "Oswald", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-Lato: "Lato", sans-serif;
+  --ff-Playfair-D: "Playfair Display", sans-serif;
+  --ff-Roboto: "Roboto", sans-serif;
+  --ff-Cormorant-G: "Cormorant Garamond", sans-serif;
+  --ff-Josefin-S: "Josefin Sans", sans-serif;
+  --ff-Crimson-T: "Crimson Text", sans-serif;
+  --ff-Raleway: "Raleway", sans-serif;
+  --ff-Merriweather: "Merriweather", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgb(30, 30, 30);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 28rem));
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.grid-card {
+  /* border: 1px solid red; */
+  background-color: #FCFCF4;
+  color: #464646;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: var(--ff-Cormorant-G);
+  color: white;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+  word-spacing: 0.2rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+#style-1 {
+  font-family: var(--ff-Lato);
+  align-items: center;
+}
+
+#style-1 h2 {
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#style-1 h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+#style-1 p {
+  margin-bottom: 1rem;
+}
+
+#style-2 {
+  align-items: center;
+}
+
+#style-2 h2 {
+  font-family: var(--ff-Playfair-D);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+#style-2 h3 {
+  font-family: var(--ff-Lato);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+#style-2 p {
+  font-family: var(--ff-Lato);
+  margin-bottom: 1rem;
+}
+
+#style-3 h2 {
+  font-family: var(--ff-Cormorant-G);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+#style-3 h3 {
+  font-family: var(--ff-Roboto);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+#style-3 p {
+  font-family: var(--ff-Roboto);
+  margin-bottom: 1rem;
+}
+
+#style-3 h4{
+  font-family: var(--ff-Cormorant-G);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#style-4 h2 {
+  font-family: var(--ff-oswald);
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#style-4 h3 {
+  font-family: var(--ff-montserrat);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+#style-4 p {
+  font-family: var(--ff-montserrat);
+  margin-bottom: 1rem;
+}
+#style-4 h4 {
+  font-family: var(--ff-oswald);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#style-5 h2 {
+  font-family: var(--ff-Josefin-S);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+#style-5 h3 {
+  font-family: var(--ff-Crimson-T);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+#style-5 p {
+  font-family: var(--ff-Crimson-T);
+  margin-bottom: 1rem;
+}
+#style-5 h4 {
+  font-family: var(--ff-Josefin-S);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#style-6 h2 {
+  font-family: var(--ff-Raleway);
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+#style-6 h3 {
+  font-family: var(--ff-Merriweather);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+#style-6 p {
+  font-family: var(--ff-Merriweather);
+  margin-bottom: 1rem;
+}
+#style-6 h4 {
+  font-family: var(--ff-Raleway);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
